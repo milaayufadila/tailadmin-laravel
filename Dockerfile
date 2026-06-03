@@ -26,8 +26,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x install.sh
-RUN ./install.sh
 
 CMD php artisan serve --host=0.0.0.0 --port=8090
 
